@@ -1,19 +1,25 @@
-# OnlineRetail-Cltv
-BG-NBD ve Gamma-Gamma ile CLTV Tahmini
+# CLTV Estimation with BG-NBD and Gamma-Gamma
 
-# İş Problemi
-İngiltere merkezli perakende şirketi müşterilerini segmentlere ayırıp bu segmentlere göre pazarlama stratejileri belirlemek istemektedir. Ortak davranışlar sergileyen müşteri segmentleri özelinde pazarlama çalışmaları yapmanın gelir artışı sağlayacağını düşünmektedir. Segmentlere ayırmak için RFM analizi kullanılacaktır.
+## Business Problem
+The UK-based retail company wants to divide its customers into segments and determine marketing strategies according to these segments. He thinks that conducting marketing activities specifically for customer segments that exhibit common behaviors will increase revenue. RFM analysis will be used to segment.
 
-# Veri Seti Hikayesi
-Online Retail II isimli veri seti İngiltere merkezli bir perakende şirketinin 01/12/2009 - 09/12/2011 tarihleri arasındaki online satış işlemlerini içeriyor. Şirketin ürün kataloğunda hediyelik eşyalar yer almaktadır ve çoğu müşterisinin toptancı olduğu bilgisi mevcuttur.
+## Dataset Story
+The data set named Online Retail II contains the online sales transactions of a UK-based retail company between 01/12/2009 and 09/12/2011. The company's product catalog includes gift items and it is known that most of its customers are wholesalers.
 
-# Degiskenler
+## Variables
 
-  ## InvoiceNo = Fatura Numarası ( Eğer bu kod C ile başlıyorsa işlemin iptal edildiğini ifade eder )
-  ## StockCode = Ürün kodu ( Her bir ürün için eşsiz )
-  ## Description = Ürün ismi
-  ## Quantity = Ürün adedi  ( Faturalardaki ürünlerden kaçar tane satıldığı)
-  ## InvoiceDate = Fatura tarihi
-  ## UnitPrice = Fatura fiyatı ( Sterlin )
-  ## CustomerID = Eşsiz müşteri numarası
-  ## Country = Ülke ismi
+InvoiceNo = Invoice Number (If this code starts with C, it means that the transaction has been cancelled)
+
+StockCode = Product code (unique for each product)
+
+Description = Product name
+
+Quantity = Number of products (How many of the products on the invoices were sold)
+
+InvoiceDate = Invoice date
+
+UnitPrice = Invoice price ( Sterling )
+
+CustomerID = Unique customer number
+
+Country = Country name
